@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Heartbrew café</title>
+        <meta
+            name="description"
+            content="Boutique de café artisanale Heartbrew"
+        />
+        <link
+            href="https://fonts.cdnfonts.com/css/tt-commons"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/js/style.js" />
+        <link
+            rel="shortcut icon"
+            href="./assets/img/favicon-hb.png"
+            type="image/png"
+        />
+    </head>
+    <body>
+        <input
+            type="checkbox"
+            id="banner-toggle"
+            class="hidden-checkbox"
+            checked="checked"
+        /><label for="banner-toggle" class="promo-banner"
+            ><p>-15% sur votre première commande</p>
+            <div class="close-icon-container">
+                <img
+                    src="./assets/img/icone_croix_white.png"
+                    alt=""
+                    class="close-icon"
+                />
+                <img
+                    src="./assets/img/icone_croix_white_hover.png"
+                    alt=""
+                    class="close-icon-hover"
+                /></div
+        ></label>
+        <header class="main-header">
+            <div class="logo-container">
+                <div class="logo">
+                    <a href="./heartbrew.html"
+                        ><img
+                            src="./assets/img/heartbrew_logo.png"
+                            alt="Heartbrew logo"
+                            class="logo-img"
+                    /></a>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <div class="search-container">
+                    <div class="search-bar">
+                        <img
+                            src="./assets/img/icone_loupe.png"
+                            alt="Rechercher"
+                        />
+                        <input type="text" placeholder="rechercher" />
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#">NOUVEAUTÉ</a></li>
+                        <li><a href="./heartbrew-nos-cafes.html">CAFÉS</a></li>
+                        <li><a href="#">HEARTSPACE</a></li>
+                        <li><a href="./heartbrew-intro-quizz.html">TEST</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                    <div class="icon-container">
+                        <img
+                            src="./assets/img/icone_sac.png"
+                            alt="Panier"
+                            class="icon"
+                        />
+                        <img
+                            src="./assets/img/icone_heart.png"
+                            alt="Favoris"
+                            class="icon"
+                        />
+                        <img
+                            src="./assets/img/icone_profile.png"
+                            alt="Profil"
+                            class="icon"
+                        />
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <div
+                        class="carousel-content"
+                        style="
+                            background-image: url(assets/img/car-accueil-img-1.png);
+                        "
+                    >
+                        <span class="carousel-number">01</span>
+                        <div class="carousel-text">
+                            <h2>Nouveauté Coldbrew</h2>
+                            <p>
+                                Les beaux jours sont là ? C'est le moment idéal
+                                pour (ré)découvrir notre collection de Cold Brew
+                                à savourer chez toi ! Faciles à préparer, nos
+                                recettes maison te guident pas à pas.
+                            </p>
+                            <a href="#" class="cta-button"
+                                >JE VEUX VOIR LES NOUVEAUTÉS</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div
+                        class="carousel-content"
+                        style="
+                            background-image: url(assets/img/car-accueil-img-2.png);
+                        "
+                    >
+                        <span class="carousel-number">02</span>
+                        <div class="carousel-text">
+                            <h2>Ton café idéal ?</h2>
+                            <p>
+                                Fini l'indécision avec Heartbrew ! Découvre le
+                                café fait pour toi en répondant à notre quiz
+                                personnalisé. En bonus : 20% de réduction sur ta
+                                toute première commande.
+                            </p>
+                            <a href="#" class="cta-button"
+                                >JE DÉCOUVRE MA SAVEUR IDÉALE</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div
+                        class="carousel-content"
+                        style="
+                            background-image: url(/assets/img/car-accueil-img-3.png);
+                        "
+                    >
+                        <span class="carousel-number">03</span>
+                        <div class="carousel-text">
+                            <h2>Ton espace immersif !</h2>
+                            <p>
+                                Tu as besoin de te concentrer mais tu ne sais
+                                pas où t'installer ? Pas de panique ! Heartbrew
+                                t'offre un espace dédié à la concentration,
+                                idéal pour toutes tes tâches du quotidien.
+                            </p>
+                            <a href="#" class="cta-button"
+                                >JE VEUX VOIR L'ESPACE DE TRAVAIL</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <div class="carousel-arrow prev">
+                    <img src="./assets/img/arrow-left.png" alt="Précédent" />
+                </div>
+                <div class="carousel-arrow next">
+                    <img src="./assets/img/arrow-right.png" alt="Suivant" />
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <div class="indicator active"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+            </div>
+        </div>
+        <div class="container">
+            <section>
+                <div class="filters">
+                    <div class="filter-section">
+                        <h2>Type de café</h2>
+                        <div class="filter-option">
+                            <input type="checkbox" id="grain" /><label
+                                for="grain"
+                                >Café en grain</label
+                            >
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="moulu" /><label
+                                for="moulu"
+                                >Café moulu</label
+                            >
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="nespresso" /><label
+                                for="nespresso"
+                                >Café capsule Nespresso</label
+                            >
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="dosettes" /><label
+                                for="dosettes"
+                                >Café dosettes solubes</label
+                            >
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <h2>Saveurs</h2>
+                        <div class="filter-option">
+                            <input type="checkbox" id="initie" /><label
+                                for="initie"
+                                >L'initié (4)</label
+                            >
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="creatif" /><label
+                                for="creatif"
+                                >Le Créatif (1)</label
+                            >
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="classique" /><label
+                                for="classique"
+                                >Le Classique (1)</label
+                            >
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="audacieux" /><label
+                                for="audacieux"
+                                >L'Audacieux (2)</label
+                            >
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="flaneur" /><label
+                                for="flaneur"
+                                >Le Flâneur (1)</label
+                            >
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="boheme" /><label
+                                for="boheme"
+                                >La Bohème (1)</label
+                            >
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="inaretable" /><label
+                                for="inaretable"
+                                >L'Inarrêtable (4)</label
+                            >
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="zen" /><label for="zen"
+                                >Le Zen (1)</label
+                            >
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="visionnaire" /><label
+                                for="visionnaire"
+                                >Le Visionnaire (1)</label
+                            >
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="terrien" /><label
+                                for="terrien"
+                                >Le Terrien (2)</label
+                            >
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="noctambule" /><label
+                                for="noctambule"
+                                >Le Noctambule (1)</label
+                            >
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="festif" /><label
+                                for="festif"
+                                >Le Festif (1)</label
+                            >
+                        </div>
+                    </div>
+                    <button href="#" class="all-products-btn">
+                        J'APPLIQUE MES FILTRES
+                    </button>
+                </div>
+            </section>
+            <div class="products-nos-cafes">
+                <div class="product-card">
+                    <div
+                        class="product-image-nos-cafes"
+                        style="
+                            background-image: url(assets/img/le-classique.png);
+                        "
+                    >
+                        <div class="product-image-nos-cafes-hover">
+                            <a href="#" class="all-products-btn">VOIR</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">
+                            Le Classique | Café moulu
+                        </div>
+                        <div class="product-rating">
+                            ★<span>5.0 - 137 avis</span>
+                        </div>
+                        <div class="product-price">7,90€</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div
+                        class="product-image-nos-cafes"
+                        style="background-image: url(assets/img/linitie.png)"
+                    >
+                        <div class="product-image-nos-cafes-hover">
+                            <a href="#" class="all-products-btn">VOIR</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">L'Initié | Café moulu</div>
+                        <div class="product-rating">
+                            ★<span>5.0 - 57 avis</span>
+                        </div>
+                        <div class="product-price">7,90€</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div
+                        class="product-image-nos-cafes"
+                        style="background-image: url(assets/img/le-flaneur.png)"
+                    >
+                        <div class="product-image-nos-cafes-hover">
+                            <a href="#" class="all-products-btn">VOIR</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Le Flâneur | Café moulu</div>
+                        <div class="product-rating">
+                            ★<span>5.0 - 87 avis</span>
+                        </div>
+                        <div class="product-price">7,90€</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div
+                        class="product-image-nos-cafes"
+                        style="
+                            background-image: url(assets/img/leclassique-capsule.png);
+                        "
+                    >
+                        <div class="product-image-nos-cafes-hover">
+                            <a href="#" class="all-products-btn">VOIR</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">
+                            Le Classique | Capsule x10
+                        </div>
+                        <div class="product-rating">
+                            ★<span>5.0 - 107 avis</span>
+                        </div>
+                        <div class="product-price">4,90€</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div
+                        class="product-image-nos-cafes"
+                        style="
+                            background-image: url(assets/img/le-classique-02.png);
+                        "
+                    >
+                        <div class="product-image-nos-cafes-hover">
+                            <a href="#" class="all-products-btn">VOIR</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">
+                            Le Classique | Café en grain
+                        </div>
+                        <div class="product-rating">
+                            ★<span>5.0 - 67 avis</span>
+                        </div>
+                        <div class="product-price">13,90€</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div
+                        class="product-image-nos-cafes"
+                        style="
+                            background-image: url(assets/img/leclassique-solube.png);
+                        "
+                    >
+                        <div class="product-image-nos-cafes-hover">
+                            <a href="#" class="all-products-btn">VOIR</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">
+                            Le Classique | Dosette solube x10
+                        </div>
+                        <div class="product-rating">
+                            ★<span>5.0 - 37 avis</span>
+                        </div>
+                        <div class="product-price">4,90€</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div
+                        class="product-image-nos-cafes"
+                        style="background-image: url(assets/img/lecreatif.png)"
+                    >
+                        <div class="product-image-nos-cafes-hover">
+                            <a href="#" class="all-products-btn">VOIR</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">
+                            Le Créatif | Café en grain
+                        </div>
+                        <div class="product-rating">
+                            ★<span>5.0 - 47 avis</span>
+                        </div>
+                        <div class="product-price">13,90€</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div
+                        class="product-image-nos-cafes"
+                        style="
+                            background-image: url(assets/img/linitie-capsule.png);
+                        "
+                    >
+                        <div class="product-image-nos-cafes-hover">
+                            <a href="#" class="all-products-btn">VOIR</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">L'Initié | Capsule x10</div>
+                        <div class="product-rating">
+                            ★<span>5.0 - 56avis</span>
+                        </div>
+                        <div class="product-price">4,90€</div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="#" class="pagination-prev">Précédent</a>
+                    <div class="pagination-numbers">
+                        <a href="#">1</a><a href="#" class="active">2</a
+                        ><a href="#">3</a><a href="#">4</a><a href="#">5</a>
+                    </div>
+                    <a href="#" class="pagination-next">Suivant</a>
+                </div>
+            </div>
+        </div>
+        <section class="bestsellers-section">
+            <h1 class="section-title">Nos meilleures ventes</h1>
+            <input type="radio" name="carousel" id="slide1" checked="checked" />
+            <input type="radio" name="carousel" id="slide2" />
+            <input type="radio" name="carousel" id="slide3" />
+            <div class="carousel-container">
+                <div class="carousel-slides">
+                    <div class="slide-bestseller">
+                        <div class="product-column">
+                            <div class="product-image-container">
+                                <img
+                                    src="./assets/img/le-classique.png"
+                                    class="product-image"
+                                    alt="Le Classique"
+                                />
+                            </div>
+                            <h3 class="product-title">
+                                Le Classique | Café moulu
+                            </h3>
+                            <p class="product-description">
+                                Un café pour les plus audacieux qui aiment le
+                                goûts prononcé du cacao
+                            </p>
+                            <a href="#" class="all-products-btn">VOIR</a>
+                        </div>
+                        <div class="product-column">
+                            <div class="product-image-container">
+                                <img
+                                    src="./assets/img/linitie.png"
+                                    class="product-image"
+                                    alt="L'Initié'"
+                                />
+                            </div>
+                            <h3 class="product-title">L'Initié | Café moulu</h3>
+                            <p class="product-description">
+                                Un café d’origine Éthiopie, torréfié en clair
+                                pour révéler toute sa complexité aromatique.
+                            </p>
+                            <a href="#" class="all-products-btn">VOIR</a>
+                        </div>
+                        <div class="product-column">
+                            <div class="product-image-container">
+                                <img
+                                    src="./assets/img/le-flaneur.png"
+                                    class="product-image"
+                                    alt="Le Flaneur"
+                                />
+                            </div>
+                            <h3 class="product-title">
+                                Le Flâneur | Café moulu
+                            </h3>
+                            <p class="product-description">
+                                Un café torréfié en douceur pour exalter ses
+                                notes fruitées et florales.
+                            </p>
+                            <a href="#" class="all-products-btn">VOIR</a>
+                        </div>
+                    </div>
+                    <div class="slide-bestseller">
+                        <div class="product-column">
+                            <img
+                                src="./assets/img/le-classique.png"
+                                alt="Le Classique"
+                                class="product-image"
+                            />
+                            <h3 class="product-title">LE CRÉATIF</h3>
+                            <p class="product-description">
+                                Un café pour les esprits les plus inspiré au
+                                notes de chocolats
+                            </p>
+                            <a href="#" class="all-products-btn">VOIR</a>
+                        </div>
+                        <div class="product-column">
+                            <img
+                                src="./assets/img/le-classique-02.png"
+                                alt="Le Classique 02"
+                                class="product-image"
+                            />
+                            <h3 class="product-title">
+                                LE CLASSIQUE | Café en grain
+                            </h3>
+                            <p class="product-description">
+                                L'édition limité du Classique dans sa version la
+                                plus intense.
+                            </p>
+                            <a href="#" class="all-products-btn">VOIR</a>
+                        </div>
+                        <div class="product-column">
+                            <img
+                                src="./assets/img/pack-hb.png"
+                                alt="Pack Heartbrew"
+                                class="product-image"
+                            />
+                            <h3 class="product-title">Heartbrew Origin</h3>
+                            <p class="product-description">
+                                La saveur original de Heartbrew qui témoigne
+                                d'un savoir faire inégalé
+                            </p>
+                            <a href="#" class="all-products-btn">VOIR</a>
+                        </div>
+                    </div>
+                    <div class="slide-bestseller">
+                        <div class="product-column">
+                            <img
+                                src="https://via.placeholder.com/300x200?text=Produit+7"
+                                alt="Produit 7"
+                                class="product-image"
+                            />
+                            <h3 class="product-title">Produit 7</h3>
+                            <p class="product-description">
+                                Description du produit 7
+                            </p>
+                            <a href="#" class="all-products-btn">VOIR</a>
+                        </div>
+                        <div class="product-column">
+                            <img
+                                src="https://via.placeholder.com/300x200?text=Produit+8"
+                                alt="Produit 8"
+                                class="product-image"
+                            />
+                            <h3 class="product-title">Produit 8</h3>
+                            <p class="product-description">
+                                Description du produit 8
+                            </p>
+                            <a href="#" class="all-products-btn">VOIR</a>
+                        </div>
+                        <div class="product-column">
+                            <img
+                                src="https://via.placeholder.com/300x200?text=Produit+9"
+                                alt="Produit 9"
+                                class="product-image"
+                            />
+                            <h3 class="product-title">Produit 9</h3>
+                            <p class="product-description">
+                                Description du produit 9
+                            </p>
+                            <a href="#" class="all-products-btn">VOIR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bestseller-nav">
+                <div class="bestseller-arrow prev">
+                    <img
+                        src="./assets/img/arrow-brown-left.png"
+                        alt="Précédent"
+                    />
+                </div>
+                <div class="bestseller-arrow next">
+                    <img
+                        src="./assets/img/arrow-brown-right.png"
+                        alt="Suivant"
+                    />
+                </div>
+            </div>
+            <a href="./heartbrew-nos-cafes.html" class="cta-button"
+                >JE VEUX VOIR TOUS LES PRODUITS</a
+            >
+        </section>
+        <section class="newsletter-section">
+            <div class="newsletter-container">
+                <h2 class="newsletter-title">
+                    Rejoins la Heartbrew community !
+                </h2>
+                <p class="newsletter-text">
+                    Pour rester au courant de l'actualité de Heartbrew, abonne
+                    toi à notre newsletter pour avoir les dernières info café et
+                    les promotions en avant premières ! Abonne-toi et profite
+                    de<strong>5% de réduction</strong>sur ta première commande !
+                </p>
+                <form class="newsletter-form">
+                    <input
+                        type="email"
+                        placeholder="Entre ton adresse email"
+                        class="newsletter-input"
+                        required
+                    /><button type="submit" class="newsletter-button">
+                        Envoyer
+                    </button>
+                </form>
+            </div>
+        </section>
+        <footer class="main-footer">
+            <div class="footer-background">
+                <img src="./assets/img/bg-footer.png" alt="image de fond" />
+            </div>
+            <div class="footer-container">
+                <div class="footer-links-column">
+                    <div class="footer-links-grid">
+                        <div class="footer-links-group">
+                            <h4 class="footer-subtitle">À PROPOS</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">Notre histoire</a></li>
+                                <li><a href="#">Notre éthique</a></li>
+                                <li><a href="#">Nos cafés</a></li>
+                                <li><a href="#">La boutique</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links-group">
+                            <h4 class="footer-subtitle">SERVICE CLIENTS</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">Aide</a></li>
+                                <li><a href="#">Livraison</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-social-logo">
+                        <div class="social-icons">
+                            <a
+                                href="#"
+                                class="social-icon"
+                                aria-label="Pinterest"
+                                ><img
+                                    src="./assets/img/icone-pinterest.png"
+                                    alt="Pinterest"
+                                    class="social-icon-normal" />
+                                <img
+                                    src="./assets/img/icone-pinterest-hover.png"
+                                    alt="Pinterest"
+                                    class="social-icon-hover" /></a
+                            ><a href="#" class="social-icon" aria-label="TikTok"
+                                ><img
+                                    src="./assets/img/icone-tiktok.png"
+                                    alt="TikTok"
+                                    class="social-icon-normal" />
+                                <img
+                                    src="./assets/img/icone-tiktok-hover.png"
+                                    alt="TikTok"
+                                    class="social-icon-hover" /></a
+                            ><a href="#" class="social-icon" aria-label="X"
+                                ><img
+                                    src="./assets/img/icone-x.png"
+                                    alt="X"
+                                    class="social-icon-normal" />
+                                <img
+                                    src="./assets/img/icone-x-hover.png"
+                                    alt="X"
+                                    class="social-icon-hover" /></a
+                            ><a
+                                href="#"
+                                class="social-icon"
+                                aria-label="Instagram"
+                                ><img
+                                    src="./assets/img/icone-insta.png"
+                                    alt="Instagram"
+                                    class="social-icon-normal" />
+                                <img
+                                    src="./assets/img/icone-insta-hover.png"
+                                    alt="Instagram"
+                                    class="social-icon-hover"
+                            /></a>
+                        </div>
+                        <a href="#top" class="footer-logo"
+                            ><img
+                                src="./assets/img/heartbrew-logo-v2.png"
+                                alt="Logo Heartbrew"
+                                class="logo-normal" />
+                            <img
+                                src="./assets/img/heartbrew-logo-v2-hover.png"
+                                alt="Logo Heartbrew"
+                                class="logo-hover"
+                        /></a>
+                    </div>
+                </div>
+                <div class="footer-app-column">
+                    <div class="app-promo-box">
+                        <h3 class="footer-title">
+                            Télécharge l'application Heartbrew !
+                        </h3>
+                        <p class="app-text">
+                            Attends-toi à des offres exclusives, un accès en
+                            avant-première aux nouveautés et à de délicieuses
+                            surprises caféinées !
+                        </p>
+                        <div class="app-badges">
+                            <a href="#" class="app-badge"
+                                ><img
+                                    src="./assets/img/icone-appstore.png"
+                                    alt="Appstore"
+                                    class="app-badge-normal" />
+                                <img
+                                    src="./assets/img/icone-appstore-hover.png"
+                                    alt="Appstore"
+                                    class="app-badge-hover" /></a
+                            ><a href="#" class="app-badge"
+                                ><img
+                                    src="./assets/img/icone-googleplay.png"
+                                    alt="Google play"
+                                    class="app-badge-normal" />
+                                <img
+                                    src="./assets/img/icone-googleplay-hover.png"
+                                    alt="Google play"
+                                    class="app-badge-hover"
+                            /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-container">
+                    <p class="copyright">
+                        © 2025 Heartbrew Corporation. Tous droits réservés
+                    </p>
+                    <ul class="legal-links">
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Politiques de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

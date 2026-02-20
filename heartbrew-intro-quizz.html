@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Heartbrew café</title>
+        <meta
+            name="description"
+            content="Boutique de café artisanale Heartbrew"
+        />
+        <link
+            href="https://fonts.cdnfonts.com/css/tt-commons"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/js/style.js" />
+        <link
+            rel="shortcut icon"
+            href="./assets/img/favicon-hb.png"
+            type="image/png"
+        />
+    </head>
+    <body>
+        <div class="container" />
+        <div
+            class="intro-quizz-section"
+            style="background-image: url('./assets/img/bg-test.png')"
+        ></div>
+        <div class="back-button">
+            <img src="./assets/img/btn-retour.png" alt="retour" />
+        </div>
+        <div class="content">
+            <div class="logo">
+                <div class="logo">
+                    <a href="./heartbrew.html"
+                        ><img
+                            src="./assets/img/heartbrew_logo.png"
+                            alt="Heartbrew logo"
+                            class="logo-img"
+                    /></a>
+                </div>
+            </div>
+            <h1 class="section-title">
+                Quelle saveur Heartbrew est faite pour moi ?
+            </h1>
+            <p class="newsletter-text">
+                Découvre ta saveur Heartbrew sur mesure en répondant à quelques
+                questions !
+            </p>
+            <a href="./heartbrew-questions-quizz.html" class="all-products-btn"
+                >JE DÉCOUVRE LA SAVEUR FAITE POUR MOI</a
+            ><a href="./heartbrew.html" class="later-link"
+                >Je préfère passer ce test plus tard</a
+            >
+        </div>
+        <script>
+            const mainLogo = document.getElementById("main-logo");
+            const hoverLogo = document.getElementById("hover-logo");
+            const logoContainer = document.querySelector(".logo");
+            logoContainer.addEventListener("mouseenter", () => {
+                mainLogo.style.display = "none";
+                hoverLogo.style.display = "block";
+            });
+            logoContainer.addEventListener("mouseleave", () => {
+                mainLogo.style.display = "block";
+                hoverLogo.style.display = "none";
+            });
+            document
+                .querySelector(".back-button")
+                .addEventListener("click", () => {
+                    window.history.back();
+                });
+            document
+                .querySelector(".all-product-btn")
+                .addEventListener("click", () => {
+                    window.location.href = "/quiz/question-1";
+                });
+            document
+                .querySelector(".later-link")
+                .addEventListener("click", () => {
+                    window.location.href = "/";
+                });
+        </script>
+    </body>
+</html>
